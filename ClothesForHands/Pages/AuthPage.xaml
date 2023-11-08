@@ -15,8 +15,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel HorizontalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center"                     
+                    Orientation="Horizontal" Margin="301,0">
+            <Image Height="50" 
+                Source="C:\Users\student_303.303COMP-010\Downloads\ClothesForHands-master\ClothesForHands\Source\Одежда для ручек.png"/>
             <TextBlock Text="Авторизация" 
+                       VerticalAlignment="Center"
                        FontSize="26"/>
         </StackPanel>
 

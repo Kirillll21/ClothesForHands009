@@ -163,6 +163,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\StockPages\StockListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StockPages\StockMenuPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\StockPages\StockPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -177,6 +185,12 @@
     </Compile>
     <Compile Include="Pages\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockPages\StockListPage.xaml.cs">
+      <DependentUpon>StockListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StockPages\StockMenuPage.xaml.cs">
+      <DependentUpon>StockMenuPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StockPages\StockPage.xaml.cs">
       <DependentUpon>StockPage.xaml</DependentUpon>

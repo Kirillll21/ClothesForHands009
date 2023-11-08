@@ -52,7 +52,7 @@ namespace ClothesForHands.Pages
                     switch (user.IdRole)
                     {
                         case 1:
-                            FrameApp.frmObj.Navigate(new StockPage());
+                            FrameApp.frmObj.Navigate(new StockMenuPage());
                             break;
                         case 2:
                             FrameApp.frmObj.Navigate(new HelloPage());

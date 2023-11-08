@@ -24,8 +24,12 @@
                         Click="btnLogin_Click"/>
         </StackPanel>
         
-        <StackPanel HorizontalAlignment="Center">
-            <TextBlock Text="Регистрация" 
+        <StackPanel HorizontalAlignment="Center"
+                    Orientation="Horizontal">
+            <Image Height="50" 
+                Source="C:\Users\student_303.303COMP-010\Downloads\ClothesForHands-master\ClothesForHands\Source\Одежда для ручек.png"/>
+            <TextBlock Text="Регистрация"
+                       VerticalAlignment="Center"
                        FontSize="26"/>
             
             

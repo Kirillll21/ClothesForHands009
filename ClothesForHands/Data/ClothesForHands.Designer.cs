@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\student_303.303COMP-010\Downloads\ClothesForHands-master\ClothesForHands\Data\ClothesForHands.edmx" включено. 
+﻿// Создание кода T4 для модели "D:\41p practic\ClothesForHands-master\ClothesForHands\Data\ClothesForHands.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.
