@@ -1,4 +1,5 @@
-﻿using ClothesForHands.Data;
+﻿using ClothesForHands.AppServices;
+using ClothesForHands.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -85,6 +86,11 @@ namespace ClothesForHands.Pages.StockPages
         private void MaterialList_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void btnGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.GoBack();
         }
     }
 }

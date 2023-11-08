@@ -41,13 +41,19 @@
                 <ComboBoxItem Content="Остаток на складе | По возрастанию"/>
                 <ComboBoxItem Content="Остаток на складе | По убыванию"/>
                 <ComboBoxItem Content="Стоимость | По возрастанию"/>
-                <ComboBoxItem Content=" Стомиость| По убыванию"/>
+                <ComboBoxItem Content=" Стоимость| По убыванию"/>
             </ComboBox>
             <ComboBox SelectionChanged="CmbFilter_SelectionChanged"
                       Name="CmbFilter"
                       Width="150">
                 
             </ComboBox>
+            <Button Width="100"
+                    Name="btnGoBack"
+                    Content="Назад"
+                    Click="btnGoBack_Click"
+                    Margin="10,0,0,0"
+                    />
         </StackPanel>
 
         <ListView
@@ -67,7 +73,7 @@
                                 <Label Content="{Binding Title}"/>
                             </StackPanel>
                             <Label Content="{Binding MinCount}" ContentStringFormat="Минимальное количество на складе: {0}"/>
-                            <Label Content="{Binding Supplier}" ContentStringFormat="Постащики: {0}"/>
+                            <Label Content="{Binding Cost}" ContentStringFormat="Цена: {0}"/>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>

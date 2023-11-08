@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClothesForHands.AppServices;
+using ClothesForHands.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,12 @@ namespace ClothesForHands.Pages.StockPages
         public StockListPage()
         {
             InitializeComponent();
+            DgrMaterials.ItemsSource = DbConnect.entObj.Material.ToList();
+        }
+
+        private void BtnGoBack_Click(object sender, RoutedEventArgs e)
+        {
+            FrameApp.frmObj.GoBack();
         }
     }
 }

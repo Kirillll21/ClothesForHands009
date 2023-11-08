@@ -9,6 +9,55 @@
       Title="StockListPage">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right">
+            <TextBlock Text="Список материалов"
+                       Margin="0,0,95,0"
+                       FontSize="30"
+                       />
+            <Button HorizontalAlignment="Right"
+                    Content="Назад"
+                    Name="BtnGoBack"
+                    Click="BtnGoBack_Click"
+                    />
+        </StackPanel>
+
+        <DataGrid Name="DgrMaterials"
+                  Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="true">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Название"
+                                    Binding="{Binding Title}"
+                                    Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Количество в уп"
+                                    Binding="{Binding CountinPack}"
+                                    Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Ед."
+                                    Binding="{Binding Untiy}"
+                                    Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Мин. кол-во"
+                                    Binding="{Binding MinCount}"
+                                    Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Кол-во на складе"
+                                    Binding="{Binding CountinStock}"
+                                    Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Цена"
+                                    Binding="{Binding Cost}"
+                                    Width="*"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            
+         
+        </StackPanel>
     </Grid>
 </Page>
